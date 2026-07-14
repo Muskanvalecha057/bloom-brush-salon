@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+nav {
+  background-color: #4a2c2a;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h2{
+  color: white;
+  margin: 0;
+}
+nav ul{
+  list-style: none;
+display: flex;
+gap: 25px;
+margin: 0;
+padding: 0;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover{
+color: #d8a7a0;
+}

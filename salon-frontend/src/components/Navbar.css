@@ -1,0 +1,96 @@
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #f3d9dc;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 96px; /* navbar aur neeche content ke beech ~1 inch space */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.logo-main {
+  font-family: 'Georgia', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #4a2c2a;
+}
+
+.logo-sub {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  color: #a15c5c;
+}
+
+.nav-and-book-group {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* nav-pill aur Book Now button ke beech gap, chhota rakha hai taake qareeb dikhein */
+}
+
+.navbar-pill {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #4a2c2a;
+  padding: 8px 40px;
+  border-radius: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f5ebe0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e8b4b8;
+}
+
+.nav-link.active {
+  background-color: #e8b4b8;
+  color: #4a2c2a;
+  font-weight: 600;
+}
+
+.book-now-navbar-btn {
+  background-color: #4a2c2a; /* navbar-pill jaisa exact color */
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  .navbar-pill {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-and-book-group {
+    flex-direction: column;
+  }
+}

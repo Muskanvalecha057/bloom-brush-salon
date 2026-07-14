@@ -1,0 +1,292 @@
+.about-page {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero */
+.about-hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+}
+
+.about-tag {
+  color: #d6336c;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-heading {
+  color: #4a2c33;
+  font-size: 38px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.about-subtext {
+  color: #7a5a60;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Why We Started */
+.story-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.story-image-wrap {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.story-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-heading {
+  color: #4a2c33;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.story-para {
+  color: #7a5a60;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* Values */
+.values-section {
+  background-color: #ffd6e0;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.values-tag {
+  color: #d6336c;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.values-heading {
+  color: #4a2c33;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 24px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(214, 51, 108, 0.08);
+}
+
+.value-icon {
+  font-size: 24px;
+  background-color: #ffd6e0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.value-title {
+  color: #4a2c33;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.value-desc {
+  color: #7a5a60;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Team */
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team-tag {
+  color: #d6336c;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.team-heading {
+  color: #4a2c33;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-card {
+  width: 200px;
+}
+
+.team-avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #ffd6e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: 0 auto 16px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(214, 51, 108, 0.15);
+}
+
+.team-name {
+  color: #4a2c33;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.team-role {
+  color: #7a5a60;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.team-badge {
+  display: inline-block;
+  background-color: #ffd6e0;
+  color: #d6336c;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.team-note {
+  color: #7a5a60;
+  font-size: 14px;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* Stats */
+.stats-section {
+  padding: 20px 20px 60px;
+}
+
+.stats-bar {
+  background-color: #4a2c33;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  color: #ffd6e0;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  color: #e8c4cb;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* CTA */
+.about-cta {
+  background-color: #ffd6e0;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-heading {
+  color: #4a2c33;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.cta-subtext {
+  color: #7a5a60;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.cta-btn {
+  background-color: #d6336c;
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #b3285a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-section {
+    flex-direction: column;
+  }
+
+  .story-img {
+    height: 250px;
+  }
+}

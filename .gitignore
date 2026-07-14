@@ -1,0 +1,25 @@
+# Environment files (SECRETS - never commit these)
+.env
+AI/.env
+salon-backend/.env
+*.env
+.env.local
+
+# Python
+venv/
+__pycache__/
+*.pyc
+salon-backend/venv/
+
+# Node / React
+node_modules/
+salon-frontend/node_modules/
+/build
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.log
