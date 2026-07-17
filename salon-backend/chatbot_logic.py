@@ -4,6 +4,7 @@ from groq_client import get_ai_response
 # Load system prompt once when the server starts
 with open(os.path.join(os.path.dirname(__file__), "system_prompt.txt"), "r", encoding="utf-8") as f:
     SYSTEM_PROMPT = f.read()
+    print(SYSTEM_PROMPT)
 
 def build_context(services):
     """Convert DB service rows into a readable text block for the AI."""
@@ -11,7 +12,7 @@ def build_context(services):
         return "No services available right now."
     lines = []
     for s in services:
-        lines.append(f"- {s.service_name} ({s.category}): {s.detail}, Price: {s.price}, Duration: {s.duration}")
+        lines.append(f"- {s.service_name} ({s.category}): {s.price}, {s.duration}")
     return "\n".join(lines)
 
 def get_chatbot_reply(chat_history: list, services: list):
@@ -29,5 +30,7 @@ def get_chatbot_reply(chat_history: list, services: list):
 
     # Final messages list: system + full conversation history
     messages = [system_message] + chat_history
+
+    print(messages)
 
     return get_ai_response(messages)
