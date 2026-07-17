@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminDashboard.css";
+import ChatWidget from "../components/ChatWidget";
 
 const categoryMeta = [
   { id: "haircut", title: "Hair Cut" },
@@ -391,6 +392,14 @@ function AdminDashboard() {
             </>
           )}
         </div>
+      )}
+      {role === "admin" && (
+        <ChatWidget
+          apiUrl="http://localhost:8000/admin-chatbot"
+          botName="Admin Assistant"
+          greetingMessage="Hi! I'm your admin assistant. I can help you add, update, or manage salon services. What would you like to do?"
+          bubbleGreeting="Need help managing services? 👋"
+        />
       )}
     </div>
   );

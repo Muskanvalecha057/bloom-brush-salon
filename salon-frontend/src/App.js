@@ -1,5 +1,5 @@
 import './index.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -11,6 +11,16 @@ import Contact from "./pages/Contact";
 import Bookings from './pages/Bookings';
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import ChatWidget from "./components/ChatWidget";
+
+function ConditionalChatWidget() {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
+  if (isAdminRoute) return null;
+
+  return <ChatWidget />;
+}
 
 function App(){
   return(
@@ -27,6 +37,7 @@ function App(){
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
        </Routes>
     <Footer />
+    <ConditionalChatWidget />
     </BrowserRouter>
   )
 }
